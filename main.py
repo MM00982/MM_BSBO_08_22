@@ -93,7 +93,7 @@ def send_click_captcha_request(image_src, task_image_src):
 
     headers = {
         'Content-type': 'application/json',
-        'X-API-Key': '18d511cc-b7a9-4e0a-a459-6f7d595c9262'
+        'X-API-Key': 'clickkeyclickkeyclickkey'
     }
 
     create_data = {
@@ -133,7 +133,7 @@ def send_text_captcha_request(image_src):
             f.write(response.content)
 
     url = 'http://api.captcha.guru/in.php'
-    key = '845785cbe668b41f5bce96a9a257c5b2'
+    key = 'textkeytextkey'
     files = {'file': open(captcha_image_path, 'rb')}
     data = {'key': key, 'method': 'post'}
 
